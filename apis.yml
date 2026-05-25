@@ -1,0 +1,283 @@
+aid: abb-robotics
+name: ABB Robotics
+description: >-
+  ABB Robotics is the robotics and discrete-automation business of ABB Ltd, the
+  Swiss-Swedish multinational headquartered in Zurich, Switzerland. ABB was
+  formed in 1988 from the merger of ASEA (Sweden) and Brown, Boveri & Cie
+  (Switzerland), with ASEA's IRB 6 (1974) considered the world's first
+  microprocessor-controlled industrial robot. ABB Robotics manufactures a broad
+  portfolio of articulated industrial robots, collaborative robots
+  (GoFa, SWIFTI, YuMi), delta robots (FlexPicker / IRB 360), painting and
+  welding robots, and autonomous mobile robots, paired with the OmniCore family
+  of controllers running RobotWare 7 and the RAPID programming language. The
+  developer surface is anchored by Robot Web Services (RWS) — a RESTful
+  HTTP/HTTPS API for IO, RAPID, motion, file service, controller, e-log,
+  subscriptions over WebSockets, and user authentication — plus the PC SDK
+  (.NET) for native controller applications and the RobotStudio SDK
+  (.NET 10 / RobotStudio 2026) for building Add-Ins and SmartComponents.
+  RobotStudio Cloud extends offline programming and simulation into a
+  collaborative browser surface. ABB also boosts RobotStudio with NVIDIA
+  Omniverse libraries for AI-driven simulation. The company sells robots,
+  controllers, software licenses, and PowerPac add-ons; RobotStudio Basic is
+  free, RobotStudio Premium is sold by annual subscription via local sales.
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/abb-robotics/refs/heads/main/apis.yml
+created: '2026-05-25'
+modified: '2026-05-25'
+specificationVersion: '0.20'
+tags:
+  - Robotics
+  - Industrial Robotics
+  - Industrial Automation
+  - Manufacturing
+  - Robot Controllers
+  - OmniCore
+  - RobotStudio
+  - RAPID
+  - Collaborative Robots
+  - Cobots
+  - Welding
+  - Painting
+  - Material Handling
+  - Picking and Packing
+  - Discrete Automation
+  - Robot Web Services
+  - REST
+  - WebSockets
+type: Index
+position: Provider
+access: 3rd-Party
+apis:
+  - aid: abb-robotics:robot-web-services
+    name: ABB Robot Web Services (RWS)
+    description: >-
+      Robot Web Services is the canonical REST/HTTP(S) API exposed by ABB
+      OmniCore (RobotWare 7) and IRC5 controllers. It provides programmatic
+      access to RAPID program data and execution, IO signals, motion system,
+      file service, e-log, configuration (CFG), controller (clock, restart,
+      identification), user authorization, and subscriptions over WebSockets.
+      RWS uses digest authentication and supports both XML (default) and JSON
+      (HAL) representations via the `json=1` query parameter. Endpoints
+      include /rw/rapid, /rw/iosystem, /rw/motionsystem, /rw/system,
+      /rw/panel, /rw/elog, /rw/cfg, /fileservice, /subscription, /users,
+      and /ctrl.
+    humanURL: https://developercenter.robotstudio.com/api/rwsApi/
+    tags:
+      - Robotics
+      - REST
+      - Controllers
+      - OmniCore
+      - RAPID
+      - IO
+      - Motion
+      - Subscriptions
+      - WebSockets
+    properties:
+      - url: https://developercenter.robotstudio.com/api/rwsApi/
+        type: Documentation
+      - url: https://developercenter.robotstudio.com/api/RWS
+        type: Documentation
+      - url: https://github.com/ros-industrial/abb_librws
+        type: SDK
+        name: abb_librws (community C++ client)
+      - url: https://abb-robot-client.readthedocs.io/en/stable/abb_robot_client/api/rws.html
+        type: SDK
+        name: abb_robot_client (community Python client)
+  - aid: abb-robotics:robot-web-services-subscriptions
+    name: ABB Robot Web Services Subscriptions
+    description: >-
+      WebSocket-based subscription service that pushes change events for
+      subscribed RWS resources (IO signals, RAPID symbols, controller state,
+      execution state, e-log, motion system). Clients open a subscription
+      group via POST /subscription and then upgrade to a WebSocket
+      connection to receive notifications. Critical for low-latency
+      controller monitoring, HMIs, and supervisory applications.
+    humanURL: https://developercenter.robotstudio.com/api/rwsApi/
+    tags:
+      - Robotics
+      - WebSockets
+      - Events
+      - Subscriptions
+      - Real-Time
+    properties:
+      - url: https://developercenter.robotstudio.com/api/rwsApi/
+        type: Documentation
+  - aid: abb-robotics:pc-sdk
+    name: ABB PC SDK
+    description: >-
+      The PC SDK is a .NET software development kit that lets system
+      integrators, third parties, and end users build custom PC applications
+      and RobotStudio Add-Ins that communicate with an ABB robot controller
+      over a network. Domains include Controller, RapidDomain, IOSystemDomain,
+      MotionDomain, EventLogDomain, FileSystemDomain, ConfigurationDomain,
+      and UserAuthorizationManagement. PC SDK is the recommended path for
+      native operator interfaces and complements RWS for richer access
+      semantics including mastership.
+    humanURL: https://developercenter.robotstudio.com/api/pcsdk/
+    tags:
+      - Robotics
+      - SDK
+      - .NET
+      - Controllers
+      - Operator Interfaces
+    properties:
+      - url: https://developercenter.robotstudio.com/api/pcsdk/
+        type: Documentation
+      - url: https://developercenter.robotstudio.com/api/pcsdk/api/index.html
+        type: Documentation
+        name: PC SDK API Reference
+      - url: https://library.e.abb.com/public/124d6b59313ed85fc125793400410c5b/3HAC036957-en.pdf
+        type: Documentation
+        name: PC SDK Application Manual
+  - aid: abb-robotics:robotstudio-sdk
+    name: ABB RobotStudio SDK
+    description: >-
+      The RobotStudio SDK enables developers to build custom applications,
+      Add-Ins, and SmartComponents that extend RobotStudio. The current
+      version targets RobotStudio 2026 and is built on .NET 10. Used by
+      ABB partners and integrators to ship PowerPac-like extensions for
+      simulation, offline programming, and workflow automation inside the
+      RobotStudio environment.
+    humanURL: https://developercenter.robotstudio.com/api/robotstudio/index.html
+    tags:
+      - Robotics
+      - SDK
+      - .NET
+      - RobotStudio
+      - Simulation
+      - Offline Programming
+    properties:
+      - url: https://developercenter.robotstudio.com/api/robotstudio/index.html
+        type: Documentation
+common:
+  - type: Website
+    url: https://global.abb/group/en/
+  - type: Portal
+    url: https://new.abb.com/products/robotics
+  - type: Portal
+    name: ABB Developer Center
+    url: https://developercenter.robotstudio.com/
+  - type: Documentation
+    name: ABB Developer Center - RWS
+    url: https://developercenter.robotstudio.com/api/rwsApi/
+  - type: Documentation
+    name: ABB Developer Center - PC SDK
+    url: https://developercenter.robotstudio.com/api/pcsdk/
+  - type: Documentation
+    name: ABB Developer Center - RobotStudio SDK
+    url: https://developercenter.robotstudio.com/api/robotstudio/index.html
+  - type: Forum
+    name: ABB Robotics User Forums
+    url: https://forums.robotstudio.com/
+  - type: Forum
+    name: ABB Robotics Community
+    url: https://tech-community.robotics.abb.com/
+  - type: Product
+    name: OmniCore Controllers
+    url: https://new.abb.com/products/robotics/controllers/omnicore
+  - type: Product
+    name: RobotStudio Suite
+    url: https://new.abb.com/products/robotics/software-and-digital/robotstudio
+  - type: Product
+    name: RobotStudio Cloud
+    url: https://new.abb.com/products/robotics/software-and-digital/robotstudio/robotstudio-cloud
+  - type: Product
+    name: Industrial Robots
+    url: https://new.abb.com/products/robotics/industrial-robots
+  - type: Product
+    name: Collaborative Robots
+    url: https://new.abb.com/products/robotics/collaborative-robots
+  - type: Product
+    name: Autonomous Mobile Robots
+    url: https://new.abb.com/products/robotics/autonomous-mobile-robots
+  - type: Downloads
+    url: https://www.abb.com/global/en/areas/robotics/downloads
+  - type: GitHubOrganization
+    url: https://github.com/ABB-Robotics
+  - type: SDK
+    name: PC SDK
+    url: https://developercenter.robotstudio.com/api/pcsdk/
+  - type: SDK
+    name: RobotStudio SDK
+    url: https://developercenter.robotstudio.com/api/robotstudio/index.html
+  - type: SDK
+    name: abb_librws (ROS-Industrial C++)
+    url: https://github.com/ros-industrial/abb_librws
+  - type: SDK
+    name: abb_libegm (ROS-Industrial C++ EGM)
+    url: https://github.com/ros-industrial/abb_libegm
+  - type: SDK
+    name: abb_robot_client (Python)
+    url: https://abb-robot-client.readthedocs.io/
+  - type: SDK
+    name: A3br (AR/PLC library for RWS)
+    url: https://github.com/loupeteam/A3br
+  - type: Documentation
+    name: OmniCore Application Manual
+    url: https://search.abb.com/library/Download.aspx?DocumentID=3HAC066554-001&LanguageCode=en&DocumentPartId=&Action=Launch
+  - type: Documentation
+    name: OmniCore Robot User Documentation (RobotWare 7)
+    url: https://search.abb.com/library/Download.aspx?DocumentID=3HAC065042-001&LanguageCode=en&DocumentPartId=&Action=Launch
+  - type: Documentation
+    name: OmniCore Integrator Guide
+    url: https://www.uzivatelskadokumentace.cz/Controllers/OmniCore/en/3HAC065037-001.pdf
+  - type: Blog
+    name: ABB News Center
+    url: https://new.abb.com/news
+  - type: Newsroom
+    url: https://global.abb/group/en/media
+  - type: PressReleases
+    url: https://global.abb/group/en/media/press-releases
+  - type: Careers
+    url: https://global.abb/group/en/careers
+  - type: Investors
+    url: https://global.abb/group/en/investors
+  - type: AnnualReport
+    url: https://global.abb/group/en/investors/financial-information/annual-reports
+  - type: Sustainability
+    url: https://global.abb/group/en/sustainability
+  - type: TermsOfService
+    name: ABB Terms of Use
+    url: https://global.abb/group/en/legal/general-terms-of-use
+  - type: PrivacyPolicy
+    url: https://global.abb/group/en/legal/privacy-notice
+  - type: Contact
+    url: https://global.abb/group/en/contact-centers
+  - type: Support
+    url: https://global.abb/group/en/contact-centers
+  - type: LinkedIn
+    url: https://www.linkedin.com/showcase/abb-robotics/
+  - type: Twitter
+    url: https://twitter.com/ABBRobotics
+  - type: YouTube
+    url: https://www.youtube.com/@ABBRobotics
+  - type: Features
+    data:
+      - OmniCore controllers (C30, C90XT, V250XT, E10) running RobotWare 7 and RAPID
+      - IRC5 controllers (legacy installed base) supporting RWS 1.0
+      - Robot Web Services (RWS) — RESTful HTTP/HTTPS API with XML and JSON (HAL) representations
+      - RWS Subscriptions delivered over WebSockets for low-latency event streams
+      - PC SDK (.NET) for custom PC operator interfaces and RobotStudio Add-Ins
+      - RobotStudio SDK (.NET 10 / RobotStudio 2026) for Add-Ins and SmartComponents
+      - RobotStudio Cloud — browser-based collaborative offline programming
+      - NVIDIA Omniverse integration for AI-driven simulation in RobotStudio
+      - Externally Guided Motion (EGM, 689-1) for real-time external motion control
+      - PowerPacs for welding, picking, painting, machine tending, palletizing
+      - Collaborative robot families (GoFa, SWIFTI, YuMi) with integrated safety
+      - Delta robot IRB 360 FlexPicker for high-speed picking and packing
+      - Autonomous mobile robot (AMR) portfolio acquired via ASTI Mobile Robotics
+      - Digest authentication for RWS, with session cookies (ABBCX, http-session)
+      - Community ROS-Industrial drivers (abb_librws, abb_libegm) and Python (abb_robot_client)
+    sources:
+      - https://new.abb.com/products/robotics
+      - https://developercenter.robotstudio.com/
+      - https://developercenter.robotstudio.com/api/rwsApi/
+      - https://developercenter.robotstudio.com/api/pcsdk/
+      - https://developercenter.robotstudio.com/api/robotstudio/index.html
+      - https://new.abb.com/products/robotics/controllers/omnicore
+      - https://new.abb.com/products/robotics/software-and-digital/robotstudio
+      - https://github.com/ros-industrial/abb_librws
+    updated: '2026-05-25'
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

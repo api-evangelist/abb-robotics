@@ -1,0 +1,167 @@
+vocabulary:
+  name: ABB Robotics Vocabulary
+  description: >-
+    Key industrial and manufacturing concepts for ABB Robotics, covering robot
+    controllers, the Robot Web Services (RWS) REST API, motion programming,
+    collaborative automation, and the OmniCore/RobotWare ecosystem.
+  version: "1.0"
+  updated: "2026-06-05"
+  terms:
+    - term: Robot Web Services (RWS)
+      definition: >-
+        The canonical RESTful HTTP/HTTPS API exposed by ABB OmniCore (RobotWare 7)
+        and IRC5 controllers. Provides programmatic access to RAPID execution, IO
+        signals, motion system, file service, e-log, configuration, controller
+        state, and user authorization. Supports both XML (default) and JSON (HAL)
+        representations via the json=1 query parameter.
+      tags:
+        - REST
+        - API
+        - Controllers
+        - OmniCore
+
+    - term: RAPID
+      definition: >-
+        ABB's proprietary robot programming language used to write motion programs,
+        task routines, and data structures that run on OmniCore and IRC5 controllers.
+        Organized into modules, routines, and tasks; accessible via the /rw/rapid
+        RWS endpoint for remote read/write of symbols and execution control.
+      tags:
+        - Programming Language
+        - Motion Control
+        - OmniCore
+        - IRC5
+
+    - term: OmniCore Controller
+      definition: >-
+        The current generation of ABB robot controllers (C30, C90XT, V250XT, E10)
+        running RobotWare 7. Exposes Robot Web Services for remote API access. Supports
+        multi-robot coordination, functional safety, and integration with RobotStudio
+        for offline programming.
+      tags:
+        - Hardware
+        - Controllers
+        - RobotWare 7
+
+    - term: IRC5 Controller
+      definition: >-
+        The previous-generation ABB robot controller with a large installed base in
+        manufacturing. Supports RWS 1.0 for legacy integrations. Programmable in
+        RAPID with similar domain structure (IO, motion, elog) to OmniCore.
+      tags:
+        - Hardware
+        - Controllers
+        - Legacy
+
+    - term: IO Signal
+      definition: >-
+        Digital or analog input/output signal managed by the ABB controller's IO
+        system (/rw/iosystem). Signals connect the robot controller to field devices,
+        sensors, PLCs, and safety circuits. Readable and writable via RWS and
+        subscribable via the WebSocket subscription service.
+      tags:
+        - IO
+        - Signals
+        - Field Devices
+        - RWS
+
+    - term: Subscription (RWS)
+      definition: >-
+        A WebSocket-based change-notification mechanism in RWS. Clients create a
+        subscription group via POST /subscription, then upgrade the HTTP connection
+        to WebSocket to receive push events for IO signals, RAPID symbols, controller
+        state, execution state, and e-log entries. Enables low-latency HMI and
+        supervisory monitoring.
+      tags:
+        - WebSockets
+        - Events
+        - Real-Time
+        - RWS
+
+    - term: Mastership
+      definition: >-
+        An exclusive lock granted to a single client that allows write access to
+        specific controller domains (e.g., RAPID, configuration, motion) in RWS
+        and the PC SDK. Prevents conflicting concurrent writes. Clients must request
+        and release mastership explicitly; the PC SDK enforces this through domain
+        mastership objects.
+      tags:
+        - Concurrency
+        - Write Access
+        - PC SDK
+        - RWS
+
+    - term: Externally Guided Motion (EGM)
+      definition: >-
+        ABB option (689-1) that enables an external system to feed real-time position
+        or velocity setpoints directly to the robot controller at high update rates
+        (up to 250 Hz). Used for visual guidance, force control, and synchronized
+        external axis motion. Communicated over UDP via Protocol Buffers.
+      tags:
+        - Motion Control
+        - Real-Time
+        - External Control
+        - EGM
+
+    - term: Collaborative Robot (Cobot)
+      definition: >-
+        A robot designed to work safely alongside humans without traditional safety
+        guarding. ABB's cobot portfolio includes GoFa (medium payload, 5 kg), SWIFTI
+        (speed-and-separation monitoring), and YuMi (dual-arm, 0.5 kg). Cobots are
+        compliant with ISO/TS 15066 and integrate safety functions directly into the
+        controller.
+      tags:
+        - Cobots
+        - Safety
+        - Human-Robot Collaboration
+        - GoFa
+        - YuMi
+
+    - term: RobotStudio
+      definition: >-
+        ABB's offline programming and simulation software for robot systems. Provides
+        a virtual controller (VC) identical to the real controller for program testing,
+        reach studies, and cycle-time optimization without stopping production. Extended
+        via the RobotStudio SDK (.NET 10) through Add-Ins and SmartComponents.
+        RobotStudio Basic is free; Premium is sold by annual subscription.
+      tags:
+        - Simulation
+        - Offline Programming
+        - SDK
+        - Software
+
+    - term: HAL (Hypertext Application Language)
+      definition: >-
+        The JSON representation format used by RWS when the json=1 query parameter
+        is supplied. HAL embeds hypermedia links (_links) alongside resource properties,
+        enabling clients to discover related RWS resources dynamically without
+        hard-coded URL construction.
+      tags:
+        - JSON
+        - Hypermedia
+        - REST
+        - RWS
+
+    - term: PowerPac
+      definition: >-
+        An ABB add-on software package for RobotStudio that extends the environment
+        with domain-specific programming and simulation capabilities. Available
+        PowerPacs cover arc welding, spot welding, painting, machine tending,
+        palletizing, and pipe bending, aligning with ABB robot application families.
+      tags:
+        - Software
+        - RobotStudio
+        - Add-On
+        - Application
+
+    - term: E-Log (Event Log)
+      definition: >-
+        The controller event logging subsystem accessible at /rw/elog in RWS. Records
+        operational messages, warnings, and errors with timestamps and severity levels.
+        Clients can read buffered log entries, filter by domain, and subscribe to
+        real-time log events via WebSocket subscriptions for supervisory monitoring.
+      tags:
+        - Logging
+        - Monitoring
+        - RWS
+        - Diagnostics

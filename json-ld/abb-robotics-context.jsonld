@@ -1,0 +1,175 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "rws": "https://developercenter.robotstudio.com/api/rwsApi/#",
+    "abb": "https://new.abb.com/products/robotics/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "ABBRobotics": {
+      "@id": "schema:Organization",
+      "@type": "@id"
+    },
+    "name": "schema:name",
+    "url": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+    "description": "schema:description",
+    "industry": "schema:industryIdentifier",
+    "foundingDate": "schema:foundingDate",
+    "parentOrganization": {
+      "@id": "schema:parentOrganization",
+      "@type": "@id"
+    },
+    "knowsAbout": {
+      "@id": "schema:knowsAbout",
+      "@type": "@id"
+    },
+    "product": {
+      "@id": "schema:product",
+      "@type": "@id"
+    },
+    "softwareApplication": {
+      "@id": "schema:SoftwareApplication",
+      "@type": "@id"
+    },
+    "programmingLanguage": "schema:programmingLanguage",
+    "operatingSystem": "schema:operatingSystem",
+    "applicationCategory": "schema:applicationCategory",
+
+    "RobotController": {
+      "@id": "abb:controllers",
+      "@type": "@id"
+    },
+    "OmniCore": {
+      "@id": "abb:controllers/omnicore",
+      "@type": "@id"
+    },
+    "IRC5": {
+      "@id": "abb:controllers",
+      "@type": "@id"
+    },
+    "RobotWebServices": {
+      "@id": "rws:",
+      "@type": "@id"
+    },
+    "RWS": {
+      "@id": "rws:",
+      "@type": "@id"
+    },
+    "RAPID": {
+      "@id": "abb:software-and-digital/robotstudio",
+      "@type": "@id"
+    },
+    "RobotStudio": {
+      "@id": "abb:software-and-digital/robotstudio",
+      "@type": "@id"
+    },
+    "CollaborativeRobot": {
+      "@id": "abb:collaborative-robots",
+      "@type": "@id"
+    },
+    "IndustrialRobot": {
+      "@id": "abb:industrial-robots",
+      "@type": "@id"
+    },
+    "AutonomousMobileRobot": {
+      "@id": "abb:autonomous-mobile-robots",
+      "@type": "@id"
+    },
+
+    "rwsResource": {
+      "@id": "rws:resource",
+      "@type": "xsd:string"
+    },
+    "ioSignal": {
+      "@id": "rws:iosystem",
+      "@type": "xsd:string"
+    },
+    "rapidSymbol": {
+      "@id": "rws:rapid",
+      "@type": "xsd:string"
+    },
+    "motionTask": {
+      "@id": "rws:motionsystem",
+      "@type": "xsd:string"
+    },
+    "elogMessage": {
+      "@id": "rws:elog",
+      "@type": "xsd:string"
+    },
+    "subscription": {
+      "@id": "rws:subscription",
+      "@type": "@id"
+    },
+    "controllerState": {
+      "@id": "rws:ctrl",
+      "@type": "xsd:string"
+    },
+    "robotwareVersion": {
+      "@id": "rws:system",
+      "@type": "xsd:string"
+    },
+    "mastership": {
+      "@id": "rws:mastership",
+      "@type": "xsd:string"
+    },
+    "executionState": {
+      "@id": "rws:rapid/execution",
+      "@type": "xsd:string"
+    },
+    "digestAuth": {
+      "@id": "schema:DigitalDocument",
+      "@type": "xsd:string"
+    },
+    "halRepresentation": {
+      "@id": "schema:additionalType",
+      "@type": "xsd:string"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://new.abb.com/products/robotics",
+      "@type": "schema:Organization",
+      "name": "ABB Robotics",
+      "description": "ABB Robotics is the robotics and discrete-automation business of ABB Ltd, manufacturing industrial robots, collaborative robots, delta robots, and autonomous mobile robots paired with OmniCore controllers and the Robot Web Services (RWS) REST API.",
+      "url": "https://new.abb.com/products/robotics",
+      "parentOrganization": "https://global.abb/group/en/",
+      "knowsAbout": [
+        "https://schema.org/SoftwareApplication",
+        "https://en.wikipedia.org/wiki/Industrial_robot",
+        "https://en.wikipedia.org/wiki/Collaborative_robot",
+        "https://en.wikipedia.org/wiki/Autonomous_mobile_robot"
+      ],
+      "product": [
+        {
+          "@id": "abb:controllers/omnicore",
+          "@type": "schema:Product",
+          "name": "OmniCore Controller",
+          "description": "ABB OmniCore family of robot controllers running RobotWare 7 and the RAPID programming language; exposes Robot Web Services (RWS) REST API."
+        },
+        {
+          "@id": "abb:software-and-digital/robotstudio",
+          "@type": "schema:SoftwareApplication",
+          "name": "RobotStudio",
+          "description": "Offline programming and simulation environment for ABB robots; extensible via the RobotStudio SDK (.NET 10).",
+          "applicationCategory": "Industrial Simulation Software",
+          "operatingSystem": "Windows"
+        },
+        {
+          "@id": "abb:industrial-robots",
+          "@type": "schema:Product",
+          "name": "Industrial Robots",
+          "description": "ABB articulated industrial robots (IRB series) for welding, painting, material handling, and machine tending."
+        },
+        {
+          "@id": "abb:collaborative-robots",
+          "@type": "schema:Product",
+          "name": "Collaborative Robots (Cobots)",
+          "description": "ABB GoFa, SWIFTI, and YuMi cobot families designed for safe human-robot collaboration."
+        }
+      ]
+    }
+  ]
+}

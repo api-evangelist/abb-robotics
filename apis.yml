@@ -20,7 +20,7 @@ description: >-
   Omniverse libraries for AI-driven simulation. The company sells robots,
   controllers, software licenses, and PowerPac add-ons; RobotStudio Basic is
   free, RobotStudio Premium is sold by annual subscription via local sales.
-image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/abb-robotics/refs/heads/main/apis.yml
 created: '2026-05-25'
 modified: '2026-05-25'

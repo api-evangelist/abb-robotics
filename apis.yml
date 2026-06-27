@@ -78,10 +78,10 @@ apis:
       - url: https://developercenter.robotstudio.com/api/RWS
         type: Documentation
       - url: https://github.com/ros-industrial/abb_librws
-        type: SDK
+        type: SDKs
         name: abb_librws (community C++ client)
       - url: https://abb-robot-client.readthedocs.io/en/stable/abb_robot_client/api/rws.html
-        type: SDK
+        type: SDKs
         name: abb_robot_client (community Python client)
   - aid: abb-robotics:robot-web-services-subscriptions
     name: ABB Robot Web Services Subscriptions
@@ -166,10 +166,10 @@ common:
   - type: Documentation
     name: ABB Developer Center - RobotStudio SDK
     url: https://developercenter.robotstudio.com/api/robotstudio/index.html
-  - type: Forum
+  - type: Forums
     name: ABB Robotics User Forums
     url: https://forums.robotstudio.com/
-  - type: Forum
+  - type: Forums
     name: ABB Robotics Community
     url: https://tech-community.robotics.abb.com/
   - type: Product
@@ -194,22 +194,22 @@ common:
     url: https://www.abb.com/global/en/areas/robotics/downloads
   - type: GitHubOrganization
     url: https://github.com/ABB-Robotics
-  - type: SDK
+  - type: SDKs
     name: PC SDK
     url: https://developercenter.robotstudio.com/api/pcsdk/
-  - type: SDK
+  - type: SDKs
     name: RobotStudio SDK
     url: https://developercenter.robotstudio.com/api/robotstudio/index.html
-  - type: SDK
+  - type: SDKs
     name: abb_librws (ROS-Industrial C++)
     url: https://github.com/ros-industrial/abb_librws
-  - type: SDK
+  - type: SDKs
     name: abb_libegm (ROS-Industrial C++ EGM)
     url: https://github.com/ros-industrial/abb_libegm
-  - type: SDK
+  - type: SDKs
     name: abb_robot_client (Python)
     url: https://abb-robot-client.readthedocs.io/
-  - type: SDK
+  - type: SDKs
     name: A3br (AR/PLC library for RWS)
     url: https://github.com/loupeteam/A3br
   - type: Documentation

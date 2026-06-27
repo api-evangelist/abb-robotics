@@ -3,13 +3,10 @@
   "feeds": [
     {
       "source": "https://new.abb.com/news",
-      "feed_url": "https://new.abb.com/news",
-      "title": "ABB News Center",
       "saved": 0,
-      "method": "none",
-      "note": "all fetch attempts timed out (feed paths /feed/, /rss, /feed.xml and HTML scrape)"
+      "error": "fetch failed: socket hang up then timeout (3 attempts)"
     }
   ],
   "post_count": 0,
-  "fetched": "2026-06-21T17:00:00Z"
+  "fetched": "2026-06-27T12:21:51Z"
 }

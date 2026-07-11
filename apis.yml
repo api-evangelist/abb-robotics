@@ -150,6 +150,8 @@ apis:
       - url: https://developercenter.robotstudio.com/api/robotstudio/index.html
         type: Documentation
 common:
+  - type: DomainSecurity
+    url: security/abb-robotics-domain-security.yml
   - type: Website
     url: https://global.abb/group/en/
   - type: Portal

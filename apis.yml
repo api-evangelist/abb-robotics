@@ -20,6 +20,17 @@ description: >-
   Omniverse libraries for AI-driven simulation. The company sells robots,
   controllers, software licenses, and PowerPac add-ons; RobotStudio Basic is
   free, RobotStudio Premium is sold by annual subscription via local sales.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown

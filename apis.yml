@@ -67,7 +67,7 @@ tags:
   - REST
   - WebSockets
 type: Index
-position: Provider
+position: Producing
 access: 3rd-Party
 apis:
   - aid: abb-robotics:robot-web-services

@@ -65,6 +65,25 @@ tags:
   - Discrete Automation
   - Robot Web Services
   - REST
+  - WebSocket
+tags_raw:
+  - Robotics
+  - Industrial Robotics
+  - Industrial Automation
+  - Manufacturing
+  - Robot Controllers
+  - OmniCore
+  - RobotStudio
+  - RAPID
+  - Collaborative Robots
+  - Cobots
+  - Welding
+  - Painting
+  - Material Handling
+  - Picking and Packing
+  - Discrete Automation
+  - Robot Web Services
+  - REST
   - WebSockets
 type: Index
 position: Producing
@@ -87,13 +106,13 @@ apis:
     tags:
       - Robotics
       - REST
-      - Controllers
+      - Controller
       - OmniCore
       - RAPID
       - IO
       - Motion
       - Subscription
-      - WebSockets
+      - WebSocket
     tags_raw:
       - Robotics
       - REST
@@ -127,7 +146,7 @@ apis:
     humanURL: https://developercenter.robotstudio.com/api/rwsApi/
     tags:
       - Robotics
-      - WebSockets
+      - WebSocket
       - Event
       - Subscription
       - Real-Time
@@ -153,6 +172,12 @@ apis:
       semantics including mastership.
     humanURL: https://developercenter.robotstudio.com/api/pcsdk/
     tags:
+      - Robotics
+      - SDK
+      - .NET
+      - Controller
+      - Operator Interfaces
+    tags_raw:
       - Robotics
       - SDK
       - .NET

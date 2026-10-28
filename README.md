@@ -1,4 +1,4 @@
-# ABB Robotics (abb-robotics)
+# ABB Robotics
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,85 +64,104 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-ABB Robotics is the robotics and discrete-automation business of ABB Ltd, the Swiss-Swedish multinational headquartered in Zurich, Switzerland. Formed in 1988 from the merger of ASEA (Sweden) and Brown, Boveri & Cie (Switzerland) — and the heir to ASEA's IRB 6, considered the first microprocessor-controlled industrial robot (1974) — ABB Robotics manufactures industrial robots, collaborative robots (GoFa, SWIFTI, YuMi), delta robots (IRB 360 FlexPicker), painting and welding robots, and autonomous mobile robots, paired with the OmniCore controller family running RobotWare 7 and the RAPID programming language. The developer surface is anchored by Robot Web Services (RWS), the PC SDK (.NET), and the RobotStudio SDK (.NET 10 / RobotStudio 2026).
+ABB Robotics is the robotics and discrete-automation business of ABB Ltd, the Swiss-Swedish multinational headquartered in Zurich, Switzerland. ABB was formed in 1988 from the merger of ASEA (Sweden) and Brown, Boveri & Cie (Switzerland), with ASEA's IRB 6 (1974) considered the world's first microprocessor-controlled industrial robot. ABB Robotics manufactures a broad portfolio of articulated industrial robots, collaborative robots (GoFa, SWIFTI, YuMi), delta robots (FlexPicker / IRB 360), painting and welding robots, and autonomous mobile robots, paired with the OmniCore family of controllers running RobotWare 7 and the RAPID programming language. The developer surface is anchored by Robot Web Services (RWS) — a RESTful HTTP/HTTPS API for IO, RAPID, motion, file service, controller, e-log, subscriptions over WebSockets, and user authentication — plus the PC SDK (.NET) for native controller applications and the RobotStudio SDK (.NET 10 / RobotStudio 2026) for building Add-Ins and SmartComponents. RobotStudio Cloud extends offline programming and simulation into a collaborative browser surface. ABB also boosts RobotStudio with NVIDIA Omniverse libraries for AI-driven simulation. The company sells robots, controllers, software licenses, and PowerPac add-ons; RobotStudio Basic is free, RobotStudio Premium is sold by annual subscription via local sales.
 
-**URL:** [Visit APIs.json](https://raw.githubusercontent.com/api-evangelist/abb-robotics/refs/heads/main/apis.yml)
+**Areas:** Robotics · Industrial Robotics · Industrial Automation · Manufacturing · Robot Controllers · OmniCore · RobotStudio · RAPID · Collaborative Robots · Cobots · Welding · Painting
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## ABB Robotics on APIs.io
 
-## Tags
+Everything profiled for ABB Robotics is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/abb-robotics/](https://apis.io/providers/abb-robotics/)** — or go straight to one of the APIs or properties below.
 
-- Robotics, Industrial Robotics, Industrial Automation, Manufacturing, Robot Controllers, OmniCore, RobotStudio, RAPID, Collaborative Robots, Cobots, Welding, Painting, Material Handling, Picking and Packing, Discrete Automation, Robot Web Services, REST, WebSockets
+### APIs (4)
 
-## Timestamps
+- [ABB Robot Web Services (RWS)](https://apis.io/apis/abb-robotics/robot-web-services/) — Robot Web Services is the canonical REST/HTTP(S) API exposed by ABB OmniCore (RobotWare 7) and IRC5 controllers. It provides programmatic access to RAPID…
+- [ABB Robot Web Services Subscriptions](https://apis.io/apis/abb-robotics/robot-web-services-subscriptions/) — WebSocket-based subscription service that pushes change events for subscribed RWS resources (IO signals, RAPID symbols, controller state, execution state,…
+- [ABB PC SDK](https://apis.io/apis/abb-robotics/pc-sdk/) — The PC SDK is a .NET software development kit that lets system integrators, third parties, and end users build custom PC applications and RobotStudio…
+- [ABB RobotStudio SDK](https://apis.io/apis/abb-robotics/robotstudio-sdk/) — The RobotStudio SDK enables developers to build custom applications, Add-Ins, and SmartComponents that extend RobotStudio. The current version targets…
 
-- **Created:** 2026-05-25
-- **Modified:** 2026-05-25
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### ABB Robot Web Services (RWS)
-The canonical REST/HTTP(S) API exposed by ABB OmniCore (RobotWare 7) and IRC5 controllers. Provides programmatic access to RAPID program data and execution, IO signals, motion system, file service, e-log, configuration (CFG), controller (clock, restart, identification), user authorization, and subscriptions over WebSockets. Supports XML (default) and JSON (HAL) representations via `json=1`. Digest authentication.
+#### JSON-LD (1)
 
-- [Documentation — RWS Introduction](https://developercenter.robotstudio.com/api/rwsApi/)
-- [Documentation — RWS Reference](https://developercenter.robotstudio.com/api/RWS)
-- [Community SDK — abb_librws (C++)](https://github.com/ros-industrial/abb_librws)
-- [Community SDK — abb_robot_client (Python)](https://abb-robot-client.readthedocs.io/en/stable/abb_robot_client/api/rws.html)
+Linked-data contexts for the provider's vocabulary.
 
-### ABB Robot Web Services Subscriptions
-WebSocket subscription service that pushes change events for subscribed RWS resources (IO signals, RAPID symbols, controller state, execution state, e-log, motion system).
+- [Abb Robotics Context](https://apis.io/jsonld/abb-robotics/abb-robotics-context/)
 
+#### Vocabulary (1)
+
+The provider's domain terms, defined.
+
+- [ABB Robotics Vocabulary](https://apis.io/vocabularies/abb-robotics/abb-robotics-vocabulary/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Abb Robotics Domain Security](https://apis.io/security/abb-robotics/abb-robotics-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://global.abb/group/en/)
 - [Documentation](https://developercenter.robotstudio.com/api/rwsApi/)
+- [Support](https://global.abb/group/en/contact-centers)
+- [Blog](https://new.abb.com/news)
+- [Terms of service](https://global.abb/group/en/legal/general-terms-of-use)
+- [Privacy policy](https://global.abb/group/en/legal/privacy-notice)
+- [GitHub](https://github.com/ABB-Robotics)
 
-### ABB PC SDK
-.NET SDK for building custom PC applications and RobotStudio Add-Ins that communicate with the controller over a network. Domains include Controller, RapidDomain, IOSystemDomain, MotionDomain, EventLogDomain, FileSystemDomain, ConfigurationDomain, and UserAuthorizationManagement.
+## API Evangelist rating
 
-- [Documentation](https://developercenter.robotstudio.com/api/pcsdk/)
-- [API Reference](https://developercenter.robotstudio.com/api/pcsdk/api/index.html)
-- [Application Manual (PDF)](https://library.e.abb.com/public/124d6b59313ed85fc125793400410c5b/3HAC036957-en.pdf)
+**Kin Score 20.0** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-### ABB RobotStudio SDK
-.NET 10 SDK targeting RobotStudio 2026 for building custom Add-Ins and SmartComponents that extend the RobotStudio simulation and offline programming environment.
+| Facet | Score |
+|---|---|
+| Discoverability | 63.4 |
+| Contract quality | 14.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 38.1 |
+| Access clarity | 10.5 |
 
-- [Documentation](https://developercenter.robotstudio.com/api/robotstudio/index.html)
+**Agent readiness 0.0** — human-only
 
-## Common Properties
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-- [Website — ABB Group](https://global.abb/group/en/)
-- [Portal — ABB Robotics](https://new.abb.com/products/robotics)
-- [Portal — ABB Developer Center](https://developercenter.robotstudio.com/)
-- [Forum — RobotStudio User Forums](https://forums.robotstudio.com/)
-- [Forum — ABB Robotics Community](https://tech-community.robotics.abb.com/)
-- [Product — OmniCore Controllers](https://new.abb.com/products/robotics/controllers/omnicore)
-- [Product — RobotStudio Suite](https://new.abb.com/products/robotics/software-and-digital/robotstudio)
-- [Product — RobotStudio Cloud](https://new.abb.com/products/robotics/software-and-digital/robotstudio/robotstudio-cloud)
-- [Product — Industrial Robots](https://new.abb.com/products/robotics/industrial-robots)
-- [Product — Collaborative Robots](https://new.abb.com/products/robotics/collaborative-robots)
-- [Product — Autonomous Mobile Robots](https://new.abb.com/products/robotics/autonomous-mobile-robots)
-- [Downloads](https://www.abb.com/global/en/areas/robotics/downloads)
-- [GitHub Organization](https://github.com/ABB-Robotics)
-- [SDK — PC SDK](https://developercenter.robotstudio.com/api/pcsdk/)
-- [SDK — RobotStudio SDK](https://developercenter.robotstudio.com/api/robotstudio/index.html)
-- [SDK — abb_librws (ROS-Industrial)](https://github.com/ros-industrial/abb_librws)
-- [SDK — abb_libegm (ROS-Industrial)](https://github.com/ros-industrial/abb_libegm)
-- [SDK — abb_robot_client (Python)](https://abb-robot-client.readthedocs.io/)
-- [SDK — A3br (PLC RWS library)](https://github.com/loupeteam/A3br)
-- [Documentation — OmniCore Application Manual](https://search.abb.com/library/Download.aspx?DocumentID=3HAC066554-001&LanguageCode=en&DocumentPartId=&Action=Launch)
-- [Documentation — OmniCore Robot User Documentation](https://search.abb.com/library/Download.aspx?DocumentID=3HAC065042-001&LanguageCode=en&DocumentPartId=&Action=Launch)
-- [Newsroom](https://global.abb/group/en/media)
-- [PressReleases](https://global.abb/group/en/media/press-releases)
-- [Careers](https://global.abb/group/en/careers)
-- [Investors](https://global.abb/group/en/investors)
-- [AnnualReport](https://global.abb/group/en/investors/financial-information/annual-reports)
-- [Sustainability](https://global.abb/group/en/sustainability)
-- [TermsOfService](https://global.abb/group/en/legal/general-terms-of-use)
-- [PrivacyPolicy](https://global.abb/group/en/legal/privacy-notice)
-- [LinkedIn](https://www.linkedin.com/showcase/abb-robotics/)
-- [Twitter](https://twitter.com/ABBRobotics)
-- [YouTube](https://www.youtube.com/@ABBRobotics)
+**Regulatory alignment 14.7** — Horizontal (data, software, accessibility, platform)
 
-## Maintainers
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/abb-robotics/](https://apis.io/providers/abb-robotics/).
 
-**FN:** Kin Lane
+## How this profile is made
 
-**Email:** kin@apievangelist.com
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for ABB Robotics: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/abb-robotics/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).

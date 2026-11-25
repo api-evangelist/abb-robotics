@@ -66,7 +66,7 @@
 
 ABB Robotics is the robotics and discrete-automation business of ABB Ltd, the Swiss-Swedish multinational headquartered in Zurich, Switzerland. ABB was formed in 1988 from the merger of ASEA (Sweden) and Brown, Boveri & Cie (Switzerland), with ASEA's IRB 6 (1974) considered the world's first microprocessor-controlled industrial robot. ABB Robotics manufactures a broad portfolio of articulated industrial robots, collaborative robots (GoFa, SWIFTI, YuMi), delta robots (FlexPicker / IRB 360), painting and welding robots, and autonomous mobile robots, paired with the OmniCore family of controllers running RobotWare 7 and the RAPID programming language. The developer surface is anchored by Robot Web Services (RWS) — a RESTful HTTP/HTTPS API for IO, RAPID, motion, file service, controller, e-log, subscriptions over WebSockets, and user authentication — plus the PC SDK (.NET) for native controller applications and the RobotStudio SDK (.NET 10 / RobotStudio 2026) for building Add-Ins and SmartComponents. RobotStudio Cloud extends offline programming and simulation into a collaborative browser surface. ABB also boosts RobotStudio with NVIDIA Omniverse libraries for AI-driven simulation. The company sells robots, controllers, software licenses, and PowerPac add-ons; RobotStudio Basic is free, RobotStudio Premium is sold by annual subscription via local sales.
 
-**Areas:** Robotics · Industrial Robotics · Industrial Automation · Manufacturing · Robot Controllers · OmniCore · RobotStudio · RAPID · Collaborative Robots · Cobots · Welding · Painting
+**Areas:** Robotics · Industrial Robotics · Industrial Automation · Manufacturing · Robot Controllers · Omni Core · Robot Studio · RAPID · Collaborative Robots · Cobots · Welding · Painting
 
 ## ABB Robotics on APIs.io
 
@@ -99,7 +99,7 @@ The provider's domain terms, defined.
 
 Authentication, trust centre, and vulnerability disclosure.
 
-- [Abb Robotics Domain Security](https://apis.io/security/abb-robotics/abb-robotics-domain-security/)
+- [ABB Robotics Domain Security](https://apis.io/security/abb-robotics/abb-robotics-domain-security/)
 
 ## Where to find this API
 
@@ -115,16 +115,16 @@ Links to the company's own pages. This repository publishes no copy of their spe
 
 ## API Evangelist rating
 
-**Kin Score 20.0** — emerging · rubric 0.24.0 · scored 2026-10-17
+**Kin Score 19.1** — emerging · rubric 0.28.1 · scored 2026-11-21
 
 | Facet | Score |
 |---|---|
-| Discoverability | 63.4 |
+| Discoverability | 64.3 |
 | Contract quality | 14.7 |
 | Contract governance | 0.0 |
-| Operational transparency | 2.6 |
+| Operational transparency | 4.8 |
 | Developer ergonomics | 38.1 |
-| Access clarity | 10.5 |
+| Access clarity | 8.5 |
 
 **Agent readiness 0.0** — human-only
 
@@ -149,8 +149,14 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Protected Resource Metadata | — |
 | Dynamic Client Registration | — |
 | Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+| MCP Tool Quality | na |
+| Onboarding Descriptor | — |
+| Dns Aid Index | na |
+| Markdown Negotiation | na |
 
-**Regulatory alignment 14.7** — Horizontal (data, software, accessibility, platform)
+**Regulatory alignment 8.8** — Horizontal (data, software, accessibility, platform)
 
 The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/abb-robotics/](https://apis.io/providers/abb-robotics/).
 
